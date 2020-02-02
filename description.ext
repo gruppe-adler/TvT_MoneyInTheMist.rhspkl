@@ -102,8 +102,8 @@ class Loadouts {
 class CfgGradCivs {
     autoInit = 0;
     minFps = 35;
-    enableOnFoot = 1;
-    enableInVehicles = 1;
+    enableOnFoot = 0;
+    enableInVehicles = 0;
 
     maxCivsOnFoot = 40;
     maxCivsInVehicles = 25;
