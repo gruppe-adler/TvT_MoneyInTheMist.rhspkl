@@ -1,0 +1,152 @@
+#define MODULES_DIRECTORY node_modules
+
+#include "cfgParams.hpp"
+#include "cfgFactions.hpp"
+
+#include "node_modules\@gruppe-adler\replay\ui\defines.hpp"
+#include "node_modules\@gruppe-adler\replay\ui\dialog.hpp"
+#include "node_modules\grad-fortifications\grad_fortifications.hpp"
+#include "node_modules\grad-scoreboard\grad_scoreboard.hpp"
+#include "node_modules\grad-islandconfig\cfgGradIslands.hpp"
+
+//HEADER =======================================================================
+class Header
+{
+    gameType = Seize;
+    minPlayers = 2;
+    maxPlayers = 47;
+};
+
+//LOAD SCREEN ==================================================================
+onLoadName = "MONEY IN THE MIST";
+onLoadMission = "";
+author = "McDiod für Gruppe Adler";
+loadScreen = "data\loadpic.paa";
+
+//MISC =========================================================================
+respawn = 3;
+respawnDelay = 9999;
+respawnVehicleDelay = 0;
+respawnTemplates[] = {"Base"};
+respawnOnStart = -1;
+respawnDialog = 0;
+disabledAI = 0;
+enableDebugConsole = 1;
+allowFunctionsRecompile = 1;
+
+//DIALOG =======================================================================
+class RscTitles {
+    #include "dialogs\preparationTime\rscTitles.hpp"
+
+    class mitm_Default {
+        idd = -1;
+        fadein = 0;
+        fadeout = 0;
+        duration = 0;
+    };
+};
+
+//MISSION ======================================================================
+class cfgMission {
+    #include "cfgMission.hpp"
+};
+
+//FUNCTIONS ====================================================================
+class CfgFunctions {
+    #include "functions\cfgFunctions.hpp"
+
+    #include "node_modules\@gruppe-adler\replay\cfgFunctions.hpp"
+
+    #include "node_modules\grad-loadout\cfgFunctions.hpp"
+    #include "node_modules\grad-fortifications\cfgFunctions.hpp"
+    #include "node_modules\grad-civs\cfgFunctions.hpp"
+    #include "node_modules\grad-gpsTracker\cfgFunctions.hpp"
+    #include "node_modules\grad-winrateTracker\cfgFunctions.hpp"
+    #include "node_modules\grad-scoreboard\cfgFunctions.hpp"
+};
+
+class GRAD_Replay {
+    precision = 7;                                    // precision of replay, 5 means every 5 seconds one snapshot (number)
+    trackedSides[] = {"west", "independent", "east", "civilian"};    // defines the sides that will be tracked (possible are "west", "east", "independant", "civilian") (array)
+    stepsPerTick = 1;                                 // defines steps played back at once (number)
+    trackedVehicles = 1;                              // defines if empty and AI steered vehicles will be tracked (0/1)
+    trackedAI = 1;                                    // defines if AI will be tracked (0/1)
+    sendingChunkSize = 10;                            // higher number means replay loading is faster, but might cause instability / lags during loading (number)
+    trackShots = 1;                                   // defines if shots will be tracked (0/1)
+    upload = 1;                                       // upload replay to server (0/1)
+};
+
+//SOUNDS =======================================================================
+class CfgSounds {
+
+};
+
+//WEAPONS THAT CAN HAVE MAGNIFYING SCOPES ======================================
+class CfgScopeWeapons {
+
+};
+
+//LOADOUTS =====================================================================
+class Loadouts {
+    resetLoadout = 1;
+    baseDelay = 5;
+    handleRadios = 1;
+
+    class Faction {
+        #include "loadouts\loadouts.hpp"
+    };
+};
+
+//CIVS =========================================================================
+#include "cfgCivilians.hpp"
+class CfgGradCivs {
+    autoInit = 0;
+    minFps = 35;
+    enableOnFoot = 1;
+    enableInVehicles = 1;
+
+    maxCivsOnFoot = 40;
+    maxCivsInVehicles = 25;
+    maxCivsResidents = 0;
+
+    backpackProbability = 0.15;
+    exitOn = "";
+    onSpawn = "";
+    onHeldUp = "";
+};
+
+
+//FORTIFICATIONS ===============================================================
+class CfgGradFortifications {
+    canDemolishDefault = 1;
+    buildTimeFactor = 0.01;
+    packUpTimeFactor = 0.01;
+    fortificationOwnerType = "SIDE";
+    demolitionTimeFactor = 1.6;
+
+    class Fortifications {
+
+    };
+};
+
+//WINRATE TRACKER ==============================================================
+class CfgWinrateTracker {
+    scoreBoardDuration = 16;                            //duration that the scoreboard will stay open
+    sortBy = "WINRATES";                                //what to sort by, can be "GAMES","WINS","LOSSES","WINRATES"
+    minGamesForSort = 5;                                //minimum number of games a player needs to have to be in the upper ranks
+    playerStatsHeadline = "PLAYER WINRATES";            //headline for scoreboard
+    teamStatsHeadline = "TEAM WINRATES";                //headline for team stats
+    missionName = "TvT_MoneyInTheMist";                       //missionName that these stats are to be saved under (if not provided, actual mission name of current mission is used)
+};
+
+//NOTIFICATIONS ================================================================
+class CfgNotifications
+{
+    class mitm_notification {
+        title = "%1";
+        iconPicture = "\A3\ui_f\data\map\markers\military\warning_CA.paa";
+        description = "%2";
+        duration = 5;
+        priority = 0;
+    };
+};
