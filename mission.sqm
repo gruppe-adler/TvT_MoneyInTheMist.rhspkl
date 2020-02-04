@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=191;
+		nextID=202;
 	};
 	class MarkerIDProvider
 	{
@@ -17,9 +17,9 @@ class EditorData
 	class Camera
 	{
 		pos[]={2460.145,110.60545,7362.834};
-		dir[]={-0.81306738,-0.3753351,0.44502428};
-		up[]={-0.32924378,0.92688954,0.18020833};
-		aside[]={0.48012647,2.0954758e-008,0.87719995};
+		dir[]={0.41341209,-0.45886523,0.78646934};
+		up[]={0.2135049,0.8885057,0.40616864};
+		aside[]={0.88515884,1.2130477e-007,-0.46528891};
 	};
 };
 binarizationWanted=0;
@@ -34,13 +34,14 @@ addons[]=
 	"ace_nouniformrestrictions",
 	"po_factions_me",
 	"A3_Air_F_Heli_Light_01",
-	"rhsgref_c_air"
+	"rhsgref_c_air",
+	"A3_Modules_F"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=10;
+		items=11;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -109,6 +110,13 @@ class AddonsMetaData
 			name="GREF Planes";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
+		};
+		class Item10
+		{
+			className="A3_Modules_F";
+			name="Arma 3 Alpha - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
 		};
 	};
 };
@@ -3716,7 +3724,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=45;
+		items=55;
 		class Item0
 		{
 			dataType="Marker";
@@ -9834,6 +9842,137 @@ class Mission
 			type="hd_pickup";
 			colorName="ColorCIV";
 			id=190;
+		};
+		class Item45
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={5478.8442,0.94079322,2598.9851};
+				angles[]={6.2662377,0,6.2116966};
+			};
+			name="civ_insert";
+			init="call{[this, civilian] call mitm_template_fnc_createStartPosition;}";
+			id=192;
+			type="Logic";
+		};
+		class Item46
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={6559.48,0.94923729,698.06299};
+				angles[]={6.2612467,0,6.2115045};
+			};
+			name="blufor_exfil";
+			init="call{[this, west] call mitm_template_fnc_createExfilPoint;}";
+			id=193;
+			type="Logic";
+		};
+		class Item47
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={6559.4312,0.96780968,696.19098};
+				angles[]={6.2662377,0,6.2116966};
+			};
+			name="blufor_insert";
+			init="call{[this, west] call mitm_template_fnc_createStartPosition;}";
+			id=194;
+			type="Logic";
+		};
+		class Item48
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4203.396,3.8463876,1536.104};
+				angles[]={6.2612467,0,6.2115045};
+			};
+			name="independent_exfil";
+			init="call{[this, independent] call mitm_template_fnc_createExfilPoint;}";
+			id=195;
+			type="Logic";
+		};
+		class Item49
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4203.3481,3.7553694,1534.2321};
+				angles[]={6.2662377,0,6.2116966};
+			};
+			name="independent_insert";
+			init="call{[this, independent] call mitm_template_fnc_createStartPosition;}";
+			id=196;
+			type="Logic";
+		};
+		class Item50
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={3919.958,2.4187019,3277.8889};
+				angles[]={6.2612467,0,6.2115045};
+			};
+			name="opfor_exfil";
+			init="call{[this, east] call mitm_template_fnc_createExfilPoint;}";
+			id=197;
+			type="Logic";
+		};
+		class Item51
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={3919.9099,2.4187019,3276.0171};
+				angles[]={6.2662377,0,6.2116966};
+			};
+			name="opfor_insert";
+			init="call{[this, east] call mitm_template_fnc_createStartPosition;}";
+			id=198;
+			type="Logic";
+		};
+		class Item52
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={6140.2832,1.0089548,1458.672};
+				angles[]={0.59794974,0,0.15559611};
+			};
+			name="missionPos_2";
+			init="call{[this, false] call mitm_template_fnc_createMissionPosition;}";
+			id=199;
+			type="Logic";
+		};
+		class Item53
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={6313.1729,0.13217592,1578.348};
+				angles[]={0.59794974,0,0.15559611};
+			};
+			name="missionPos_1";
+			init="call{[this, false] call mitm_template_fnc_createMissionPosition;}";
+			id=200;
+			type="Logic";
+		};
+		class Item54
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={5479.9131,0.86820626,2599.2319};
+				angles[]={6.2664471,0,6.2115045};
+			};
+			name="missionPos_3";
+			init="call{[this, true] call mitm_template_fnc_createMissionPosition;}";
+			id=201;
+			type="Logic";
+			atlOffset=-5.9604645e-008;
 		};
 	};
 	class Connections
