@@ -1,13 +1,9 @@
 class mafia {
     class AllUnits {
         uniform[] = {
-            "rds_uniform_Woodlander1",
-            "rds_uniform_Woodlander2",
-            "rds_uniform_Woodlander3",
-            "rds_uniform_Woodlander4",
-            "rds_uniform_citizen1",
-            "rds_uniform_citizen2",
-            "rds_uniform_citizen4"
+            "U_I_C_Soldier_Para_2_F",
+            "U_I_C_Soldier_Para_3_F",
+            "U_I_C_Soldier_Camo_F"
         };
         backpack[] = {
             "B_FieldPack_blk",
@@ -17,16 +13,9 @@ class mafia {
             "B_TacticalPack_oli"
         };
         headgear[] = {
-            "",
-            "H_Watchcap_blk",
-            "H_Watchcap_camo",
-            "H_Watchcap_cbr",
-            "H_Hat_brown",
-            "H_Hat_grey",
-            "rds_Woodlander_cap3",
-            "rds_Woodlander_cap4",
-            "rds_Villager_cap1",
-            "rds_worker_cap4"
+            "rhsgref_hat_M1951",
+            "rhssaf_booniehat_woodland",
+            "H_Booniehat_oli"
         };
         primaryWeapon[] = {
             "rhs_weap_akm",
