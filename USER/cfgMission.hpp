@@ -1,6 +1,6 @@
-spawnStartVehicles = 1;                         // set this to 0 to disable scripted spawning of starting vehicles (useful in template mode with non-random starting positions)
-useParamWeather = 1;                            // set this to 0 if you want to use the weather you set in editor instead of the weather set in mission params
-useParamTime = 1;                               // set this to 0 if you want to use the time of day you set in editor instead of the time of day set in mission params
+spawnStartVehicles = 0;                         // set this to 0 to disable scripted spawning of starting vehicles (useful in template mode with non-random starting positions)
+useParamWeather = 0;                            // set this to 0 if you want to use the weather you set in editor instead of the weather set in mission params
+useParamTime = 0;                               // set this to 0 if you want to use the time of day you set in editor instead of the time of day set in mission params
 teleportPlayersToStart = 1;                     // set this to 0 if you don't want player units teleported to their respective starting positions on game start (useful in template mode when placing units in editor)
 
 locationDistances[] = {1000,2000};              // min and max distances for next courier location
@@ -33,13 +33,13 @@ jipToSpectatorTime = 1800;                      // time after which JIP players 
 class civVehicles {
     randomFuel[] = {0.15,0.35};
 
-    carLocationAmountFactor = 0.3;
+    carLocationAmountFactor = 0.1;
     carLocationMinDist = 30;
 
-    carRoadAmountFactor = 0.03;
+    carRoadAmountFactor = 0.01;
     carRoadMinDist = 300;
 
-    boatCoastAmountFactor = 1;
+    boatCoastAmountFactor = 0.5;
     boatTypes[] = {
         "C_Boat_Civil_01_F",
         "C_Boat_Civil_01_rescue_F",

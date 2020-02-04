@@ -1,39 +1,37 @@
 class rebels {
     class AllUnits {
         uniform[] = {
-            "LOP_U_PMC_Fatigue_04",
-            "LOP_U_PMC_Fatigue_01",
-            "U_I_C_Soldier_Bandit_2_F",
-            "U_I_C_Soldier_Bandit_3_F",
-            "U_I_C_Soldier_Para_1_F",
-            "U_I_C_Soldier_Para_3_F",
-            "U_I_C_Soldier_Para_4_F"
+            "U_I_C_Soldier_Para_4_F",
+            "U_I_C_Soldier_Bandit_5_F",
+            "U_I_C_Soldier_Bandit_1_F",
+            "U_BG_Guerrilla_6_1",
+            "U_BG_Guerilla2_3",
+            "U_B_CTRG_Soldier_2_F",
+            "U_I_C_Soldier_Para_5_F"
         };
         backpack[] = {
             "rhs_sidor",
             "rhs_assault_umbts"
         };
         headgear[] = {
-            "H_Cap_blk",
-            "H_Cap_oli",
-            "H_Bandanna_gry",
             "H_Bandanna_khk",
+            "H_Bandanna_sgg",
+            "H_Bandanna_khk_hs",
             "H_Bandanna_cbr",
-            "H_Booniehat_oli",
-            "H_Booniehat_khk",
-            "rhs_beanie_green",
-            "H_Shemag_olive",
-            "H_ShemagOpen_tan"
+            "H_Bandanna_gry",
+            "H_Bandanna_camo",
+            "H_Beret_blk",
+            "H_HeadBandage_bloody_F",
+            "H_HeadBandage_stained_F",
+            "grad_beret_black",
+            "grad_beret_green"
         };
         goggles[] = {
             "",
-            "G_Bandanna_oli",
-            "G_Bandanna_blk",
-            "G_Bandanna_khk",
-            "G_Bandanna_sport",
-            "G_Bandanna_shades",
-            "G_Bandanna_beast",
-            "G_Bandanna_aviator",
+            "",
+            "",
+            "",
+            "",
             "rhs_scarf",
             "G_Balaclava_blk",
             "G_Balaclava_oli",

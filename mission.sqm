@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=206;
+		nextID=229;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2460.145,110.60545,7362.834};
-		dir[]={0.41341209,-0.45886523,0.78646934};
-		up[]={0.2135049,0.8885057,0.40616864};
-		aside[]={0.88515884,1.2130477e-007,-0.46528891};
+		pos[]={5473.3877,24.990969,2572.5945};
+		dir[]={-0.038260031,-0.72895509,0.68351448};
+		up[]={-0.040740728,0.68454874,0.72782695};
+		aside[]={0.99845326,-9.671021e-008,0.055889558};
 	};
 };
 binarizationWanted=0;
@@ -35,13 +35,19 @@ addons[]=
 	"po_factions_me",
 	"A3_Air_F_Heli_Light_01",
 	"rhsgref_c_air",
-	"A3_Modules_F"
+	"A3_Modules_F",
+	"A3_Boat_F_Exp_Boat_Transport_01",
+	"rhsgref_c_vehicles_ret",
+	"A3_Boat_F_Exp_Boat_Transport_02",
+	"A3_Boat_F_Gamma_Boat_Transport_01",
+	"rhs_c_bkm_t",
+	"rhsgref_c_canoe"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=11;
+		items=16;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -118,6 +124,39 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item11
+		{
+			className="A3_Boat_F_Exp";
+			name="Arma 3 Apex - Boats and Submersibles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item12
+		{
+			className="rhsgref_c_vehicles_ret";
+			name="GREF Vehicle Retextures";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
+		class Item13
+		{
+			className="A3_Boat_F_Gamma";
+			name="Arma 3 - Boats and Submersibles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item14
+		{
+			className="rhs_c_bkm_t";
+			name="rhs_c_bkm_t";
+		};
+		class Item15
+		{
+			className="rhsgref_c_canoe";
+			name="RHS Canoe";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
 	};
 };
 randomSeed=16182131;
@@ -127,7 +166,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -4373,7 +4412,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=51;
+		items=63;
 		class Item0
 		{
 			dataType="Marker";
@@ -10419,8 +10458,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={5478.8442,0.94079322,2598.9851};
-				angles[]={6.2662377,0,6.2116966};
+				position[]={5478.4619,0.25564831,2586.2781};
 			};
 			name="civ_insert";
 			init="call{[this, civilian] call mitm_template_fnc_createStartPosition;}";
@@ -10536,14 +10574,13 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={5479.9131,0.86820626,2599.2319};
-				angles[]={6.2664471,0,6.2115045};
+				position[]={5479.5308,0,2586.5249};
 			};
 			name="missionPos_3";
 			init="call{[this, true] call mitm_template_fnc_createMissionPosition;}";
 			id=201;
 			type="Logic";
-			atlOffset=-5.9604645e-008;
+			atlOffset=-0.19010361;
 		};
 		class Item47
 		{
@@ -10596,6 +10633,200 @@ class Mission
 			id=205;
 			type="Logic";
 			atlOffset=0.89722443;
+		};
+		class Item51
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4162.4917,1.2435327,1597.7866};
+				angles[]={0,0.33408597,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=215;
+			type="I_C_Boat_Transport_01_F";
+			atlOffset=1.8588467;
+		};
+		class Item52
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4160.4487,1.2435327,1591.8839};
+				angles[]={0,0.33408597,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=216;
+			type="I_C_Boat_Transport_01_F";
+			atlOffset=2.4279461;
+		};
+		class Item53
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6570.3862,1.2435327,687.55463};
+				angles[]={0,1.6407537,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=217;
+			type="B_T_Boat_Transport_01_F";
+			atlOffset=1.4042884;
+		};
+		class Item54
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6576.7349,1.2435327,687.40552};
+				angles[]={0,1.6407537,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=218;
+			type="B_T_Boat_Transport_01_F";
+			atlOffset=1.457437;
+		};
+		class Item55
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6584.4668,1.3190708,686.21692};
+				angles[]={0,1.5975345,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=219;
+			type="rhsgref_hidf_rhib";
+			atlOffset=1.5420178;
+		};
+		class Item56
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4163.6064,0.54801095,1605.538};
+				angles[]={0,6.2248092,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=221;
+			type="C_Boat_Transport_02_F";
+			atlOffset=1.3120054;
+		};
+		class Item57
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3955.3328,2.2086377,3289.9246};
+				angles[]={0,1.8390133,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=222;
+			type="I_C_Boat_Transport_02_F";
+			atlOffset=2.4913833;
+		};
+		class Item58
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3948.1716,1.2435327,3291.8303};
+				angles[]={0,1.8990023,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=223;
+			type="O_G_Boat_Transport_01_F";
+			atlOffset=1.5196605;
+		};
+		class Item59
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3930.832,1.5675938,3297.1821};
+				angles[]={0,1.8552129,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=224;
+			type="rhs_bkm_t";
+			atlOffset=1.4088194;
+		};
+		class Item60
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3941.594,1.2435327,3293.7192};
+				angles[]={0,1.8990023,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=225;
+			type="O_G_Boat_Transport_01_F";
+			atlOffset=1.4709647;
+		};
+		class Item61
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5480.7339,0.41668493,2576.1047};
+				angles[]={0,3.0380857,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=226;
+			type="rhsgref_hidf_canoe";
+			atlOffset=0.16096552;
+		};
+		class Item62
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5481.3545,0.41668493,2570.4836};
+				angles[]={0,3.0380857,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=227;
+			type="rhsgref_hidf_canoe";
+			atlOffset=0.14195547;
 		};
 	};
 	class Connections
