@@ -94,7 +94,6 @@ class mafia {
 
         //Squad Leader
         class Soldier_SL_F: Soldier_F {
-            uniform = "rds_uniform_Functionary2";
             primaryWeapon[] = {
                 "rhs_weap_akm_gp25",
                 "rhs_weap_akms_gp25"
@@ -117,7 +116,6 @@ class mafia {
 
     class Rank {
         class LIEUTENANT {
-            uniform = "rds_uniform_Functionary1";
             headgear = "";
         };
     };
