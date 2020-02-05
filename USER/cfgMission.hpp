@@ -39,12 +39,20 @@ class civVehicles {
     carRoadAmountFactor = 0.01;
     carRoadMinDist = 300;
 
-    boatCoastAmountFactor = 0.5;
+    boatCoastAmountFactor = 10;
     boatTypes[] = {
-        "C_Boat_Civil_01_F",
+        "O_T_Lifeboat",
         "C_Boat_Civil_01_rescue_F",
-        "C_Boat_Transport_02_F",
-        "C_Scooter_Transport_01_F",
-        "C_Rubberboat"
+        "C_Rubberboat",
+        "rhsgref_civ_canoe",
+        "rhsgref_civ_canoe",
+        "rhsgref_civ_canoe",
+        "rhsgref_civ_canoe",
+        "rhsgref_civ_canoe",
+        "rhsgref_civ_canoe",
+        "rhsgref_civ_canoe",
+        "rhsgref_civ_canoe",
+        "rhsgref_civ_canoe",
+        "rhsgref_civ_canoe"
     };
 };

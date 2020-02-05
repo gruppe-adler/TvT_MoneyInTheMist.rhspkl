@@ -46,6 +46,6 @@ class Params {
         title = "Debug Mode";
         values[] = {0,1};
         texts[] = {"Off","On"};
-        default = 0;
+        default = 1;
     };
 };

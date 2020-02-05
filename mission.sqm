@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=283;
+		nextID=285;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6623.083,1.5641006,678.8559};
-		dir[]={-0.87822866,-0.4099831,0.24631283};
-		up[]={-0.39476579,0.91208452,0.11071875};
-		aside[]={0.27005237,1.8416904e-007,0.96287};
+		pos[]={5948.2598,32.608288,1911.6418};
+		dir[]={-0.14005129,-0.30942464,-0.94056171};
+		up[]={-0.04557262,0.9509201,-0.30605835};
+		aside[]={-0.98910224,-2.8721115e-007,0.1472794};
 	};
 };
 binarizationWanted=0;
@@ -10280,13 +10280,13 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={6313.1729,0.13217592,1578.348};
-				angles[]={0.59794974,0,0.15559611};
+				position[]={6336.605,0,1981.7754};
 			};
 			name="missionPos_1";
 			init="call{[this, false] call mitm_template_fnc_createMissionPosition;}";
 			id=200;
 			type="Logic";
+			atlOffset=-0.32109341;
 		};
 		class Item35
 		{

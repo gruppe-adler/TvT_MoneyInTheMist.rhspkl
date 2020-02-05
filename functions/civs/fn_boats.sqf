@@ -27,7 +27,8 @@ private _searchRadius = 4500 * MITM_MISSIONPARAM_SIZEFACTOR;
 
 while {count _thesePositions < _boatsToCreate && {_loopCount < _boatsToCreate * 100}} do {
     _searchPos = [_playzoneCenter,[0,_searchRadius],[0,360],""] call mitm_common_fnc_findRandomPos;
-    _coastPos = [_searchPos,500,2] call mitm_common_fnc_nearestCoast;
+    _coastPos = [_searchPos,500, 2] call mitm_common_fnc_nearestCoast;
+    // _coastPos = [_searchPos,500, 2, 5, 3] call mitm_common_fnc_nearestCoast;
 
     if !(_coastPos isEqualTo [0,0,0]) then {
         _type = selectRandom _availableTypes;
