@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=249;
+		nextID=252;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6631.9609,25.639795,703.2218};
-		dir[]={-0.7946232,-0.55897444,-0.23691139};
-		up[]={-0.53567481,0.82918465,-0.15970835};
-		aside[]={-0.28571713,-4.3204636e-008,0.95831782};
+		pos[]={5506.8477,24.926046,2542.5308};
+		dir[]={-0.75308055,-0.57090533,-0.32702649};
+		up[]={-0.5236637,0.82101226,-0.22740202};
+		aside[]={-0.39831781,5.2241376e-008,0.91725141};
 	};
 };
 binarizationWanted=0;
@@ -39,13 +39,14 @@ addons[]=
 	"A3_Boat_F_Exp_Boat_Transport_02",
 	"A3_Boat_F_Gamma_Boat_Transport_01",
 	"rhsgref_c_canoe",
-	"gm_demo_aaf_mb_u1300l"
+	"gm_demo_aaf_mb_u1300l",
+	"rds_A2_Civilians"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=14;
+		items=15;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -140,6 +141,13 @@ class AddonsMetaData
 		{
 			className="gm_demo_aaf_mb_u1300l";
 			name="gm_demo_aaf_mb_u1300l";
+		};
+		class Item14
+		{
+			className="rds_A2_Civilians";
+			name="RDS Civilian Pack Cars";
+			author="reyhard";
+			url="https://forums.bistudio.com/topic/170165-rds-a2-civilian-pack/";
 		};
 	};
 };
@@ -4396,7 +4404,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=60;
+		items=62;
 		class Item0
 		{
 			dataType="Marker";
@@ -10166,12 +10174,14 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={5478.4619,0.25564831,2586.2781};
+				position[]={5474.6782,0.86417174,2567.1191};
+				angles[]={6.0882306,0,6.2135911};
 			};
 			name="civ_insert";
 			init="call{[this, civilian] call mitm_template_fnc_createStartPosition;}";
 			id=192;
 			type="Logic";
+			atlOffset=0.19010359;
 		};
 		class Item27
 		{
@@ -10282,13 +10292,13 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={5479.5308,0,2586.5249};
+				position[]={5475.7471,0.55295509,2567.366};
+				angles[]={6.1718473,0,6.1290483};
 			};
 			name="missionPos_3";
 			init="call{[this, true] call mitm_template_fnc_createMissionPosition;}";
 			id=201;
 			type="Logic";
-			atlOffset=-0.19010361;
 		};
 		class Item36
 		{
@@ -10563,34 +10573,32 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5480.7339,0.41668493,2576.1047};
+				position[]={5483.3105,0.67228007,2551.7639};
 				angles[]={0,3.0380857,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 			};
 			id=226;
 			type="rhsgref_hidf_canoe";
-			atlOffset=0.16096552;
+			atlOffset=1.1690753;
 		};
 		class Item50
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5481.3545,0.41668493,2570.4836};
+				position[]={5483.9312,0.85046178,2546.1428};
 				angles[]={0,3.0380857,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 			};
 			id=227;
 			type="rhsgref_hidf_canoe";
-			atlOffset=0.14195547;
+			atlOffset=1.1500652;
 		};
 		class Item51
 		{
@@ -11714,6 +11722,7 @@ class Mission
 			};
 			id=243;
 			type="gm_demo_aaf_mb_u1300l_cargo";
+			atlOffset=-1.1920929e-007;
 		};
 		class Item57
 		{
@@ -12078,6 +12087,7 @@ class Mission
 			};
 			id=247;
 			type="rhsgref_ins_g_gaz66";
+			atlOffset=-0.0033818483;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -12424,6 +12434,7 @@ class Mission
 			};
 			id=248;
 			type="rhsgref_ins_g_gaz66";
+			atlOffset=-0.0007096529;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -12753,6 +12764,40 @@ class Mission
 				};
 				nAttributes=8;
 			};
+		};
+		class Item60
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5470.0161,2.442091,2567.0864};
+				angles[]={6.0383511,3.1078162,0.09522891};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=249;
+			type="RDS_tt650_Civ_01";
+			atlOffset=-0.0097004175;
+		};
+		class Item61
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5472.0532,2.388567,2566.7686};
+				angles[]={6.0707927,2.8836851,0.0016914561};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=251;
+			type="RDS_JAWA353_Civ_01";
+			atlOffset=-0.00022733212;
 		};
 	};
 	class Connections

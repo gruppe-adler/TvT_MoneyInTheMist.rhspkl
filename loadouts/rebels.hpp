@@ -20,11 +20,8 @@ class rebels {
             "H_Bandanna_cbr",
             "H_Bandanna_gry",
             "H_Bandanna_camo",
-            "H_Beret_blk",
             "H_HeadBandage_bloody_F",
-            "H_HeadBandage_stained_F",
-            "grad_beret_black",
-            "grad_beret_green"
+            "H_HeadBandage_stained_F"
         };
         goggles[] = {
             "",
@@ -62,7 +59,6 @@ class rebels {
     class Type {
         //Rifleman
         class Soldier_F {
-            headgear = "H_Cap_blk";
             addItemsToBackpack[] = {
                 LIST_7("rhs_30Rnd_762x39mm"),
                 LIST_2("rhs_mag_rdg2_white"),
@@ -108,13 +104,12 @@ class rebels {
 
         //Rifleman (AT)
         class soldier_LAT_F: Soldier_F {
-            headgear = "H_Cap_blk";
             secondaryWeapon = "rhs_weap_rpg26";
         };
 
         //Squad Leader
         class Soldier_SL_F: Soldier_F {
-            headgear = "H_Cap_blk";
+            headgear = "grad_beret_black";
             primaryWeapon = "rhs_weap_ak103_gp25";
             primaryWeaponUnderbarrelMagazine = "rhs_GRD40_White";
             vest = "V_BandollierB_rgr";
@@ -126,7 +121,7 @@ class rebels {
 
         //Team Leader
         class Soldier_TL_F: Soldier_SL_F {
-
+            headgear = "grad_beret_green";
         };
     };
 };
