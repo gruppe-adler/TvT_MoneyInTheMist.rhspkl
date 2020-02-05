@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=252;
+		nextID=267;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5506.8477,24.926046,2542.5308};
-		dir[]={-0.75308055,-0.57090533,-0.32702649};
-		up[]={-0.5236637,0.82101226,-0.22740202};
-		aside[]={-0.39831781,5.2241376e-008,0.91725141};
+		pos[]={6625.5864,5.0553446,690.03754};
+		dir[]={-0.84002179,-0.42255619,-0.34032407};
+		up[]={-0.39164215,0.90633339,-0.15866853};
+		aside[]={-0.37549305,-1.2735836e-007,0.92683107};
 	};
 };
 binarizationWanted=0;
@@ -10427,7 +10427,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="call{if (isServer) then {  this setVariable [""ace_vehiclelock_lockSide"", west, true]; }; }";
+				init="call{if (isServer) then {  this setVariable [""ace_vehiclelock_lockSide"", west, true]; [this] execVM ""USER\fillDivingStuff.sqf""; }; }";
 			};
 			id=219;
 			type="rhsgref_hidf_rhib";
@@ -10502,7 +10502,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={3955.333,2.2081454,3289.925};
-				angles[]={0,1.8390185,0};
+				angles[]={0,1.6051887,0};
 			};
 			side="Empty";
 			class Attributes
@@ -10542,7 +10542,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={3948.1716,1.2435327,3291.8303};
-				angles[]={0,1.8990023,0};
+				angles[]={0,1.5645535,0};
 			};
 			side="Empty";
 			class Attributes
@@ -10558,7 +10558,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={3941.594,1.2435327,3293.7192};
-				angles[]={0,1.8990023,0};
+				angles[]={0,1.410733,0};
 			};
 			side="Empty";
 			class Attributes
