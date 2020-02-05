@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6622.8174,1.8528907,678.92169};
-		dir[]={0.15755855,-0.57172018,-0.80519265};
-		up[]={0.10979261,0.82044029,-0.56108785};
-		aside[]={-0.98139912,-6.0550519e-008,-0.19203858};
+		pos[]={6623.083,1.5641006,678.8559};
+		dir[]={-0.87822866,-0.4099831,0.24631283};
+		up[]={-0.39476579,0.91208452,0.11071875};
+		aside[]={0.27005237,1.8416904e-007,0.96287};
 	};
 };
 binarizationWanted=0;
@@ -40,16 +40,13 @@ addons[]=
 	"A3_Boat_F_Gamma_Boat_Transport_01",
 	"rhsgref_c_canoe",
 	"gm_demo_aaf_mb_u1300l",
-	"rds_A2_Civilians",
-	"A3_Weapons_F_Orange",
-	"A3_Props_F_Orange_Items_Documents",
-	"A3_Structures_F_EPA_Items_Medical"
+	"rds_A2_Civilians"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=18;
+		items=15;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -151,27 +148,6 @@ class AddonsMetaData
 			name="RDS Civilian Pack Cars";
 			author="reyhard";
 			url="https://forums.bistudio.com/topic/170165-rds-a2-civilian-pack/";
-		};
-		class Item15
-		{
-			className="A3_Weapons_F_Orange";
-			name="Arma 3 Orange - Weapons and Accessories";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item16
-		{
-			className="A3_Props_F_Orange";
-			name="Arma 3 Orange - Decorative and Mission Objects";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item17
-		{
-			className="A3_Structures_F_EPA";
-			name="Arma 3 Survive Episode - Buildings and Structures";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
 		};
 	};
 };
@@ -4408,6 +4384,7 @@ class Mission
 	{
 		timeOfChanges=1800.0002;
 		startWeather=0.30000001;
+		startFog=0.19875515;
 		startWind=0.1;
 		startWaves=0.1;
 		forecastWeather=0.30000001;
@@ -4423,12 +4400,12 @@ class Mission
 		day=24;
 		hour=12;
 		minute=0;
-		startFogDecay=0.014;
+		startFogDecay=0.053310383;
 		forecastFogDecay=0.014;
 	};
 	class Entities
 	{
-		items=67;
+		items=62;
 		class Item0
 		{
 			dataType="Marker";
@@ -12822,81 +12799,6 @@ class Mission
 			id=251;
 			type="RDS_JAWA353_Civ_01";
 			atlOffset=-0.00022733212;
-		};
-		class Item62
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={6621.4233,0.019227028,677.69507};
-			};
-			side="Empty";
-			class Attributes
-			{
-			};
-			id=268;
-			type="Leaflet_05_F";
-			atlOffset=4.2857022;
-		};
-		class Item63
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={6621.4814,-0.0066128895,677.94843};
-			};
-			side="Empty";
-			class Attributes
-			{
-			};
-			id=271;
-			type="Leaflet_05_Old_F";
-			atlOffset=4.2779098;
-		};
-		class Item64
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={6621.688,0.010737896,677.89752};
-			};
-			side="Empty";
-			class Attributes
-			{
-			};
-			id=272;
-			type="Land_Wallet_01_F";
-			atlOffset=4.302639;
-		};
-		class Item65
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={6621.7173,0.017882347,678.10968};
-			};
-			side="Empty";
-			class Attributes
-			{
-			};
-			id=273;
-			type="Land_Antibiotic_F";
-			atlOffset=4.2998004;
-		};
-		class Item66
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={6621.5142,0.058270454,678.23053};
-			};
-			side="Empty";
-			class Attributes
-			{
-			};
-			id=278;
-			type="Land_VitaminBottle_F";
-			atlOffset=4.2806783;
 		};
 	};
 	class Connections
