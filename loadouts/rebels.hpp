@@ -29,10 +29,7 @@ class rebels {
             "",
             "",
             "",
-            "rhs_scarf",
-            "G_Balaclava_blk",
-            "G_Balaclava_oli",
-            "rhs_balaclava1_olive"
+            "rhs_scarf"
         };
         primaryWeapon[] = {
             "rhs_weap_m70b1",

@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5948.2598,32.608288,1911.6418};
-		dir[]={-0.14005129,-0.30942464,-0.94056171};
-		up[]={-0.04557262,0.9509201,-0.30605835};
-		aside[]={-0.98910224,-2.8721115e-007,0.1472794};
+		pos[]={4898.4658,27.647169,3026.6392};
+		dir[]={-0.086970262,-0.57066613,0.81656647};
+		up[]={-0.060438421,0.82118225,0.5674566};
+		aside[]={0.99437743,4.0730811e-008,0.10590854};
 	};
 };
 binarizationWanted=0;
@@ -10267,8 +10267,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={6140.2832,1.0089548,1458.672};
-				angles[]={0.59794974,0,0.15559611};
+				position[]={5971.2798,14.19739,1326.3958};
+				angles[]={6.2576351,0,0.091295898};
 			};
 			name="missionPos_2";
 			init="call{[this, false] call mitm_template_fnc_createMissionPosition;}";
@@ -10306,26 +10306,26 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={5858.7192,0,1943.6772};
+				position[]={5532.7803,13.412301,1988.4626};
+				angles[]={0.03729739,0,6.2775435};
 			};
 			name="missionPos_4";
 			init="call{[this, false] call mitm_template_fnc_createMissionPosition;}";
 			id=202;
 			type="Logic";
-			atlOffset=0.89736235;
 		};
 		class Item37
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={5394.0073,2.3614738,2353.3037};
+				position[]={4898.4146,3.0701518,3047.6843};
 			};
 			name="missionPos_5";
 			init="call{[this, false] call mitm_template_fnc_createMissionPosition;}";
 			id=203;
 			type="Logic";
-			atlOffset=0.89722633;
+			atlOffset=0.89762259;
 		};
 		class Item38
 		{
