@@ -19,7 +19,7 @@ params [["_briefcase",objNull]];
 
 // disable collision with new JIP player
 addMissionEventHandler ["PlayerConnected",{
-    params ["","_uid","_jip"];
+    params ["","_uid","","_jip"];
 
     if (!_jip) exitWith {};
     if (isNil "mitm_briefcase") exitWith {};
